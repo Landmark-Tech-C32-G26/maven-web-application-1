@@ -6,6 +6,7 @@ node{
   stage('2Test&Build'){
     sh "${mavenHome}/bin/mvn clean package"
     //bat "${mavenHome}/bin/mvn clean package"
+// testing comment
   }
   stage('3codeQuality'){
     sh "${mavenHome}/bin/mvn  sonar:sonar"
